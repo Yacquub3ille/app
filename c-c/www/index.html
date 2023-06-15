@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calorie Counter</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Lato", sans-serif
+        }
+
+        .w3-bar, h1, button {
+            font-family: "Montserrat", sans-serif
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .w3-lightpink {
+            background-color: lightpink;
+        }
+
+        .fa-anchor, .fa-coffee {
+            font-size: 200px
+        }
+
+        section {
+            border-bottom: solid 5px black;
+            border-right: solid 5px black;
+        }
+
+        #page-container {
+            min-height: 100vh;
+            position: relative;
+        }
+
+        #content-wrap {
+            padding-bottom: 12rem;
+        }
+
+        footer {
+            background: grey;
+            bottom: 0;
+            border: solid 2px black;
+            padding: 20px 20px;
+            font-size: 16px;
+            height: 12rem;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+
+            <!-- Navbar -->
+            <div class="w3-top">
+                <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+                    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-large w3-back" style="padding:38.5px" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                    <a href="index.html" class=" logo w3-bar-item w3-button w3-padding-large w3-white"><img src="img/logo.png"></a>
+                    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white" style="padding:38.5px"><b>Home</b></a>
+                    <a href="calculator.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white" style="padding:38.5px"><b>Calculator</b></a>
+                    <a href="tips.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white" style="padding: 38.5px"><b>Fitness & Health</b></a>
+                    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white" style="padding: 38.5px"><b>Contact</b></a>
+                </div>
+
+                <!-- Navbar on small screens -->
+                <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+                    <a href="index.html" class="w3-bar-item w3-button w3-padding-large"><b>Home</b></a>
+                    <a href="calculator.html" class="w3-bar-item w3-button w3-padding-large"><b>Calculator</b></a>
+                    <a href="tips.html" class="w3-bar-item w3-button w3-padding-large"><b>Fitness & Health</b></a>
+                    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large"><b>Contact</b></a>
+                </div>
+            </div>
+
+            <!-- First Grid -->
+            <section class="w3-container w3-lightpink w3-center" style="padding:247px 50px">
+                <h1 class="w3-margin w3-jumbo"><b>HOME</b></h1>
+                <p class="w3-xlarge">To check your calorie balance click the button below.</p>
+                <a href="calculator.html"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button></a>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p><b>Follow Us on Social Media for more fitness updates</b></p>
+            <div class="w3-xlarge">
+                <a href="https://www.instagram.com/getfitapps/?hl=en" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                <a href="https://twitter.com/getfitapps" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            </div>
+            <p>Calorie Calculator</p>
+        </footer>
+    </div>
+
+
+    <script>
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+</html>
